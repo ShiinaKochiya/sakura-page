@@ -11,34 +11,44 @@
     </head>
 
     <body>
-        <!--star Section start-->
+        <!--star Section start--> 
         <div class="star">
             <nav>
-                <h2 class="logo">Port<span>fo</span>lio</h2>
-                
-                <li><a href="#" class="btn">Le button</a></li>
+                <h2 id="logo">Port<span>fo</span>lio</h2>
+                <div id="btmc">
+                <ul>
+                    <li><a href="#home" onclick="scroll1();">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>  
+                </ul>
+                </div>
+                <li><a href="https://github.com/SakuraKaslana/sakura-page" class="btn"  target="_blank">Source code</a></li>
             </nav>
-        <div class="cc">
+        
+        <div id="cc">
             <h4>Hello, my name is</h4>
             <h1>Sakura Kaslana</h1>
             <h3>A professional dumbass who simp for an anime girl</h3>
-            <a href="#" class="nwl">Le button</a>
+            <a href="#" class="nwl" onclick="scroll1();">A little bit about me</a>
         </div>
+        
         </div>
         <!--about section start-->
-        <section class="about">
+        <section id="about">
             <div class="main">
                 <img src="./2.png">
                 <div class="about-text">
                     <h2>About me:</h2>
-                    <h5>Code <span>for life</span></h5>
-                    <p>I am a hobby-programmer, mainly do Discord bot</p>
-                    <button type="button">Wanna talk to me?</button>
+                    <h5><a href="https://www.codeforlife.education">Code <span>for life</span></a></h5>
+                    <p>I am a hobby-programmer, mainly do Discord bot using Discord.js and sometimes Discord.py</p>
+                    <p>I am also and Angie simp so don't question about it :)</p>
+                    <button type="button" onclick="scroll2();">Stuff that I did</button>
                 </div>
             </div>
         </section>
         <!--project section start-->
-        <div class="projects">
+        <div id="projects">
             <div class="title">
                 <h2>My projects</h2>
             </div>
@@ -58,23 +68,23 @@
             </div>
         </div> 
         <!--contact section-->       
-        <div class="contact">
+        <div id="contact">
             <p>Want to contact me?</p>
-            <a class="button-2" href="mailto: abc@example.com">Send me an Email!</a>
+            <a class="button-2" href="mailto: caovanviethung1412@gmail.com">Send me an Email!</a>
         </div>
         <footer>
             <p>Connections:</p>
             <div class="socials">
-                <a href="https://www.facebook.com/profile.php?id=100028921368283"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://discord.gg/rxsKzWPqYZ"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://twitter.com/SakuraKaslana"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.youtube.com/channel/UCrn9I5aDXQ5Azk_K0_9EqYg"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://github.com/SakuraKaslana"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100028921368283" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://discord.gg/rxsKzWPqYZ" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://twitter.com/SakuraKaslana" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCrn9I5aDXQ5Azk_K0_9EqYg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/SakuraKaslana" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </footer>
         <script type="text/javascript">
             function scroll1(){
-           window.scrollTo(0,600);
+           window.scrollTo(0,0);
             }
         </script>
         <script type="text/javascript">
@@ -87,5 +97,6 @@
            window.scrollTo(0,727727);
             }
         </script>
+        </ul>
     </body>
 </html>
