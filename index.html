@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="effects.js"></script>
 </head>
 
 <body>
@@ -26,40 +27,41 @@
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="https://mainpage.codingat25.repl.co">CA25</a></li>
         </ul>
       </div>
-      <a href="https://github.com/SakuraKaslana/sakura-page" class="btn" target="_blank">Source code</a>
+      <a href="https://https://github.com/SakanaKochiya/sakura-page" class="btn" target="_blank">Source code</a>
     </nav>
 
-    <div id="cc">
-      <h4>Hello, my name is</h4>
-      <h1>Shiina Kochiya</h1>
-      <h3>A professional dumbass who simp for an anime girl</h3>
-      <a href="#about" class="nwl">A little bit about me</a>
+    <div id="cc" class="hidden">
+      <h4 class="text hidden">Hello, my name is</h4>
+      <h1 class="text hidden">Shiina Kochiya</h1>
+      <h3 class="text hidden">A professional dumbass who simp for an anime girl</h3>
+      <a href="#about" id="nwl" class="text hidden">A little bit about me</a>
     </div>
 
   </div>
   <!--about section start-->
-  <section id="about">
-    <div class="main">
+  <section id="about" >
+    <div id="main" class="hidden">
       <img src="./2.png">
       <div class="about-text">
-        <h2>About me:</h2>
-        <h5><a href="https://www.codeforlife.education">Code <span>for life</span></a></h5>
-        <p>I am a hobby-programmer, mainly do Discord bot using Discord.js</p>
-        <p>I am also an Angelina Ajimu simp so don't question about it :)</p>
-        <button type="button" onclick="scroll2();">Stuff that I did</button>
+        <h2 class="abouts hidden">About me:</h2>
+        <h5 class="abouts hidden">Code <span>for life</span></a></h5>
+        <p class="abouts hidden">I am a hobby-programmer, mainly do Discord bot using Discord.js</p>
+        <p class="abouts hidden">Co-leader of a small coding team name CA25</p>
+        <p class="abouts hidden">I am also an Angelina Ajimu simp so don't question about it :)</p>
+        <button type="button" onclick="scroll2();" class="abouts hidden">Stuff that I did</button>
       </div>
     </div>
   </section>
   <!--project section start-->
-  <div id="projects">
-    <div class="title">
+  <div id="projects" >
+    <div id="title" class="hidden">
       <h2>My projects</h2>
     </div>
-    <div class="boxbox">
-
-      <div class="card">
+    <div id="boxbox" class="hidden">
+      <div id="card" class="prosekai hidden">
         <i class="fa-solid fa-bars"></i>
         <h5>Discord bot: Angelina-chan</h5>
         <div class="pra">
@@ -69,12 +71,12 @@
           </p>
         </div>
       </div>
-      <img src="./3.png">
+      <img src="./3.png" class="prosekai hidden">
     </div>
   </div>
   <!--contact section-->
-  <div id="contact">
-    <p>Want to contact me?</p>
+  <div id="contact" >
+    <p class="hidden">Want to contact me?</p>
     <a class="button-2" href="mailto: caovanviethung1412@gmail.com">Send me an Email if you need anything</a>
   </div>
   <footer>
@@ -89,6 +91,7 @@
       <a href="https://github.com/SakuraKaslana" target="_blank"><i class="fa-brands fa-github"></i></a>
     </div>
     <div class="lic">@ShiinaKochiya - All right reserved</div>
+    <div class="lic">Fun Fact: The last time this page updated is on 11 Feb, 2023</div>
   </footer>
   <script type="text/javascript">
     function scroll1() {
