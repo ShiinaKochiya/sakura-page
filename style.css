@@ -7,6 +7,17 @@ html {
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
+.hidden{
+    opacity: 0;
+    transition: 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 .star{
     height: 100vh;
     width: 100%;
@@ -24,8 +35,7 @@ nav{
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
-    position: fixed;
-    
+    position: center fixed;
 }
 
 #logo{
@@ -83,6 +93,18 @@ nav ul li a:hover{
     left: 8%;
     transform: translateY(-50%);
 }
+.text:nth-child(2){
+    transition-delay: 200ms;
+}
+.text:nth-child(3){
+    transition-delay: 400ms;
+}
+.text:nth-child(4){
+    transition-delay: 600ms;
+}
+.text:nth-child(5){
+    transition-delay: 600ms;
+}
 h1{
     color: aquamarine;
     margin: 20px 0px 20px;
@@ -98,7 +120,7 @@ h4{
     letter-spacing: 1px;
     font-size: 20px;
 }
-.nwl{
+#nwl{
     background-color: #FF4A47;
     color: white;
     text-decoration: none;
@@ -120,7 +142,19 @@ h4{
 .about-text{
     width:550px;
 }
-.main{
+.abouts:nth-child(2){
+    transition-delay: 200ms;
+}
+.abouts:nth-child(3){
+    transition-delay: 400ms;
+}
+.abouts:nth-child(4){
+    transition-delay: 600ms;
+}
+.abouts:nth-child(5){
+    transition-delay: 600ms;
+}
+#main{
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -176,25 +210,26 @@ button:hover{
     border: 2px solid #FF4A47;
     cursor: pointer;
 }
+
 #projects{
     background: white;
     width: 100%;
     padding: 100px 0px;
 }
-.title h2{
+#title h2{
     color: black;
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
-.boxbox{
+#boxbox{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
-.card{
+#card{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
@@ -205,7 +240,7 @@ button:hover{
     overflow: hidden;
     text-align: center;
 }
-.card i{
+#card i{
     font-size: 50px;
     display: block;
     text-align: center;
@@ -227,7 +262,7 @@ h5{
     line-height: 27px;
     margin-bottom: 25px;
 }
-.card .button{
+#card .button{
     background-color: #FF4A47;
     color: white;
     text-decoration: none;
@@ -237,7 +272,7 @@ h5{
     border-radius: 30px;
     transition: .4s;
 }
-.card .button:hover{
+#card .button:hover{
     background-color: white;
     color: #000;
     border: 2px solid #FF4A47;
@@ -309,4 +344,7 @@ footer p:nth-child(1){
 }
 .socials a:hover{
     transform: scale(1.3);
+}
+.lic{
+    color: #727277;
 }
