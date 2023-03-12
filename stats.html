@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shiina Kochiya profile</title>
+  <link rel="stylesheet" type="text/css" href="style stats.css">
+
+  <link rel="preconnect" href="https://font.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="effects.js"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+
+<body>
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+      <!--star Section start-->
+  <div class="star">
+    <nav>
+      <h2 id="logo">Port<span>fo</span>lio</h2>
+      <div id="btmc">
+        <ul>
+            <li><a href="./index.html" onclick="scroll1();">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./index.html#projects">Projects</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+            <li><a href="./stats.html">Stats</a></li>
+            <li><a href="https://mainpage.codingat25.repl.co">CA25</a></li>
+        </ul>
+      </div>
+      <a href="https://https://github.com/SakanaKochiya/sakura-page" class="btn" target="_blank">Source code</a>
+    </nav>
+    <div id="github">
+        <h1><a href="https://github.com/SakanaKochiya"><img src="https://github-readme-stats.vercel.app/api?username=SakanaKochiya&amp;show_icons=true&amp;theme=gotham&amp;border_color=0fffbf" alt="Shiina Kochiya&#39;s GitHub stats"></a></h1>
+        <h2><a href="https://github.com/SakanaKochiya"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SakanaKochiya&amp;theme=gotham&amp;border_color=0fffbf" alt="Top Languagues"></a></h2>
+    </div>
+    <div id="worktime">
+        <p><a href="https://github.com/SakanaKochiya"><img src="https://github-readme-stats.vercel.app/api/wakatime?username=Shiina_Kochiya&amp;theme=gotham&amp;border_color=0fffbf" alt="Shiina Kochiya&#39;s wakatime stats"></a></p>
+    </div>
+    <script type="text/javascript">
+      let progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight
+      window.onscroll = function(){
+          let progressHeight = (window.pageYOffset / totalHeight) * 100;
+          progress.style.height = progressHeight + '%'
+      }
+  </script>
+</body>
+<footer>
+    <p>Connections:</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/profile.php?id=100028921368283" target="_blank"><i
+          class="fa-brands fa-facebook"></i></a>
+      <a href="https://discord.gg/rxsKzWPqYZ" target="_blank"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://twitter.com/SakuraKaslana" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCrn9I5aDXQ5Azk_K0_9EqYg" target="_blank"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://github.com/SakuraKaslana" target="_blank"><i class="fa-brands fa-github"></i></a>
+      
+    </div>
+    <div class="lic">@ShiinaKochiya - All right reserved</div>
+    <div class="lic">Fun Fact: The last time this page updated is on 11 Feb, 2023</div>
+    
+  </footer>
