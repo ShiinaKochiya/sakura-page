@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>A page</title>
+  <title>Shiina Kochiya profile</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <link rel="preconnect" href="https://font.gstatic.com">
@@ -14,19 +14,24 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="effects.js"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
   <!--star Section start-->
   <div class="star">
     <nav>
       <h2 id="logo">Port<span>fo</span>lio</h2>
       <div id="btmc">
         <ul>
-          <li><a href="#home" onclick="scroll1();">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="./index.html" onclick="scroll1();">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+          <li><a href="./stats.html">Stats</a></li>
           <li><a href="https://mainpage.codingat25.repl.co">CA25</a></li>
         </ul>
       </div>
@@ -51,7 +56,7 @@
         <p class="abouts hidden">I am a hobby-programmer, mainly do Discord bot using Discord.js</p>
         <p class="abouts hidden">Co-leader of a small coding team name CA25</p>
         <p class="abouts hidden">I am also an Angelina Ajimu simp so don't question about it :)</p>
-        <button type="button" onclick="scroll2();" class="abouts hidden">Stuff that I did</button>
+        <a href="./about.html"><button type="button" class="abouts hidden"> A little bit more about me</button></a>
       </div>
     </div>
   </section>
@@ -89,9 +94,11 @@
       <a href="https://www.youtube.com/channel/UCrn9I5aDXQ5Azk_K0_9EqYg" target="_blank"><i
           class="fa-brands fa-youtube"></i></a>
       <a href="https://github.com/SakuraKaslana" target="_blank"><i class="fa-brands fa-github"></i></a>
+      
     </div>
     <div class="lic">@ShiinaKochiya - All right reserved</div>
     <div class="lic">Fun Fact: The last time this page updated is on 11 Feb, 2023</div>
+    
   </footer>
   <script type="text/javascript">
     function scroll1() {
@@ -107,6 +114,15 @@
     function scroll3() {
       window.scrollTo(0, 727727);
     }
+  </script>
+  </script>
+  <script type="text/javascript">
+      let progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight
+      window.onscroll = function(){
+          let progressHeight = (window.pageYOffset / totalHeight) * 100;
+          progress.style.height = progressHeight + '%'
+      }
   </script>
   </ul>
 </body>
