@@ -206,8 +206,7 @@ h4{
     transition-delay: 1200ms;
 }
 #main{
-    width: 1130px;
-    max-width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -270,7 +269,6 @@ button:hover{
 #title h2{
     color: black;
     font-size: 75px;
-
     margin: 30px auto;
     text-align: center;
 }
@@ -532,7 +530,64 @@ About page here
     text-align: right;
     z-index: 2;
 }
-
 .about-star a{
     text-decoration: none;
+}
+.ptg h2{
+    margin: 30px;
+}
+.img{
+    width: 30%;
+    border-radius: 20px;
+    margin: 50px;
+}
+.sketch{
+    width: 40%;
+    border-radius: 20px;
+    margin: 20px;
+}
+.second{
+    padding-right: 0%;
+}
+.art{
+    background-color: #181818;
+    width: 100%;
+    margin-top: 0;
+}
+.hobbies:nth-child(2){
+    transition-delay: 200ms;
+}
+.hobbies:nth-child(3){
+    transition-delay: 400ms;
+}
+.hobbies:nth-child(4){
+    transition-delay: 600ms;
+}
+.hobbies:nth-child(5){
+    transition-delay: 800ms;
+}
+.art-text{
+    color: white;
+    margin-top: 70px;
+}
+#sub-title h2{
+    font-size: 50px;
+    text-align: center;
+}
+.sub-art{
+    color: white;
+    background-color: #181818;
+    margin-bottom: 0;
+}
+.para{
+    text-align: center;
+    margin-top: 40px;
+}
+.img2{
+    width: 50%;
+    border-radius: 20px;
+    margin: 50px;
+}
+.gaem{
+    margin: 50px;
 }
