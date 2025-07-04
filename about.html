@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shiina Kochiya profile</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://font.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="effects.js"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+  <!--star Section start-->
+  <div class="about-star">
+    <nav>
+      <a href="./index.html"><h2 id="logo">Shiina <span>Kochiya</span></h2></a>
+      <div id="btmc">
+        <ul>
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+          <li><a href="./index.html#ext-projects">External Projects</a></li>
+          <li><a href="https://ca-25-shiinakochiyas-projects.vercel.app">CA25</a></li>
+        </ul>
+      </div>
+      <a href="https://github.com/ShiinaKochiya/sakura-page" class="btn" target="_blank">Source code</a>
+    </nav>
+
+    <div id="cc" class="hidden">
+      <h1 class="text hidden">The more about me</h1>
+      <h3 class="text hidden">"Someday, our dreams will come true"</h3>
+      <a href="#about" id="nwl" class="text hidden">A little bit about me</a>
+    </div>
+
+  </div>
+  <!--about section start-->
+  <section id="about" >
+    <div id="main" class="hidden">
+      <img src="./2.png" class="pfp">
+      <div class="about-text">
+        <h2 class="abouts hidden">About me:</h2>
+        <h5 class="abouts hidden"><span>"For we, are the Dreamchasers"</span></a></h5>
+        <p class="abouts hidden">My name is Việt Hưng, also goes by the name Shiina Kochiya (シイナ • コチヤ), Paul Vincent and Sakura (my very old name)</p>
+        <p class="abouts hidden">Am a hobby-programmer, artist, freelance cosplay photographer and artist. I do join projects here and there if it sparks my interest. I'm also a gamer (Mostly play gacha, rhythm games and First Person/Third Persons Shooter such as Arknights, VALORANT, Strinova, maimai, Honkai: Star Rail)</p>
+        <p class="abouts hidden">Co-leader of CA25, content creator of <a href="https://www.facebook.com/NoiKhongVoi0San">"Nói không với 0 Sanity"</a> and <a href="https://www.facebook.com/profile.php?id=100088578633362">"Một cái trang sìn A, M và S"</a>, also a member of <a href="https://github.com/arknights-vns">Arknights Vietnam Station</a> organization and <a href="https://github.com/team-nameless">team-nameless*/MSOC</a></p>
+        <p class="abouts hidden">I can use JavaScript/React/Node, Java, Lua, Python. On my way to learn C# and C++</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Connections:</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/ShiinaKochiya/" target="_blank"><i
+          class="fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/ShiinaKochiya" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCrn9I5aDXQ5Azk_K0_9EqYg" target="_blank"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://github.com/ShiinaKochiya" target="_blank"><i class="fa-brands fa-github"></i></a>
+      
+    </div>
+    
+  </footer>
+  <script type="text/javascript">
+      let progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight
+      window.onscroll = function(){
+          let progressHeight = (window.pageYOffset / totalHeight) * 100;
+          progress.style.height = progressHeight + '%'
+      }
+  </script>
+  </ul>
+</body>
+
+</html>
