@@ -1,4 +1,4 @@
 # sakura-page
-About my page smh
+I will rename this repo later on
 
-Link: https://sakura-page.sakurakaslana.repl.io
+Link: sakura-page-beta.vercel.app
