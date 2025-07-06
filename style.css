@@ -418,16 +418,16 @@ h5{
     transition-delay: 200ms;
 }
 .ext:nth-child(3){
-    transition-delay: 200ms;
+    transition-delay: 400ms;
 }
 .ext:nth-child(4){
-    transition-delay: 200ms;
+    transition-delay: 600ms;
 }
 .ext:nth-child(5){
-    transition-delay: 200ms;
+    transition-delay: 800ms;
 }
 .ext:nth-child(6){
-    transition-delay: 200ms;
+    transition-delay: 1000ms;
 }
 #random{
     width: 100%;
