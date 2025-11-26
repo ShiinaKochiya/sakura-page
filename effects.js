@@ -29,7 +29,7 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 // Masonry gallery generator for #photography
 function generateMasonryGallery() {
-  const imageCount = 18;
+  const imageCount = 23;
   const gallery = document.querySelector('.gallery');
   gallery.innerHTML = '';
   for (let i = 1; i <= imageCount; i++) {
